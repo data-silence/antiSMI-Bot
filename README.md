@@ -1,7 +1,5 @@
 # antiSMI-Bot
 
-![](https://github.com/maxlethal/antiSMI-Bot/blob/master/img/bot_presentation.png?raw=true)
-
 Bot is a telegram interface to personal and smart news aggregator:
 - clean news (with no commercials, no garbage and no reservations)
 - neutral news (emotional coloring of news is automatically removed) 
@@ -12,6 +10,7 @@ The aggregator uses machine learning models to solve the problem of classificati
 
 [Bot](https://t.me/antiSMI_bot) is one of three parts of [antiSMI Project](https://maxlethal.notion.site/antiSMI-project-763ed7401b9f4e2cbee7cdf6f03ad0b9?pvs=4 "Concept"): Parser, Bot and Monitor.
 
+![](https://github.com/maxlethal/antiSMI-Bot/blob/master/img/bot_presentation.png?raw=true)
 
 ## Version history
 
