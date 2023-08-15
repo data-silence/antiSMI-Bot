@@ -3,8 +3,11 @@ FROM python:3.11
 
 WORKDIR /app
 
-COPY . ./
+COPY . /app
 COPY models/ /app/models/
+COPY scripts/ /app/scripts/
+COPY imports/ /app/imports/
+
 
 RUN python -m pip install --upgrade pip && pip install -r requirements.txt
 
