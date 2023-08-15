@@ -2,7 +2,7 @@
 
 ![](https://github.com/maxlethal/antiSMI-Bot/blob/master/img/bot_presentation.png?raw=true)
 
-Bot is a telegram interface to personal and smart news aggregator of independent russian-language media:
+Bot is a telegram interface to personal and smart news aggregator of russian-language media:
 - removes news garbage (ads, disclaimers, etc.)
 - provides news in neutral-colored and summarized form)
 - combines similar news into stories: minimizes viewing of duplicate news stories
