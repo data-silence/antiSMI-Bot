@@ -13,7 +13,7 @@ Bot is a telegram interface to personal and smart news aggregator of russian-lan
 
 Bot uses machine learning models to solve the problem of classification, news clustering, neutral headline and summary generation.
 
-[Bot](https://t.me/antiSMI_bot) is one of three parts of [antiSMI Project](https://maxlethal.notion.site/antiSMI-project-763ed7401b9f4e2cbee7cdf6f03ad0b9?pvs=4 "Concept"): Parser, Bot and Monitor.
+[Bot](https://t.me/antiSMI_bot) is one of three parts of [antiSMI Project](https://maxlethal.notion.site/antiSMI-project-763ed7401b9f4e2cbee7cdf6f03ad0b9?pvs=4 "Concept"): Parser, Bot and Observer.
 
 ## Version history
 
@@ -38,4 +38,5 @@ Bot uses machine learning models to solve the problem of classification, news cl
 * customizing news sources
 * news in English, Ukranian and make the necessary models for this
 * voice digests
+
 
