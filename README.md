@@ -15,6 +15,33 @@ Bot uses machine learning models to solve the problem of classification, news cl
 
 Bot is one of three parts of [antiSMI Project](https://github.com/maxlethal/antiSMI-Project"): Parser, Bot and Observer.
 
+
+## Stack and Tools
+
+* **Language:** python, sql 
+* **Interaction Interface:** pyTelegramBot
+* **Databases:** postgreSQL, sqlalchemy
+* **Logging:** loguru
+
+### ML models:
+- **Summarization**
+    - mBart, Seq2Seq, pre-trained [news summary]
+    - ruT5, pre-trained [headline]
+- **Categorization**
+    - fasttext, supervised pre-training, 7 classes (categories)
+- **Clustering**
+    - Navec glove-embeddings (trained on news corpus)
+    - sklearn: agglomerative clustering by cosine distance with tuned thresholding
+
+
+### Development Tools
+
+- Pycharm
+- Docker
+- GitHub
+- Linux shell
+
+
 ## Version history
 
 ### [v 1.0](https://github.com/maxlethal/antiSMI-1.0) [complited]
