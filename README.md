@@ -24,14 +24,12 @@ Bot is one of three parts of [antiSMI Project](https://github.com/maxlethal/anti
 * **Logging:** loguru
 
 ### ML models:
-- **Summarization**
-    - mBart, Seq2Seq, pre-trained [news summary]
-    - ruT5, pre-trained [headline]
-- **Categorization**
-    - fasttext, supervised pre-training, 7 classes (categories)
-- **Clustering**
+
+**Summarization** and **Categorization** problems are solved by [antiSMI-Collector](https://github.com/maxlethal/antiSMI-Collector).
+- **Clustering:**
     - Navec glove-embeddings (trained on news corpus)
     - sklearn: agglomerative clustering by cosine distance with tuned thresholding
+
 
 
 ### Development Tools
@@ -63,7 +61,7 @@ Bot is one of three parts of [antiSMI Project](https://github.com/maxlethal/anti
 * improve news classification model
 * improve news summarization model (optional)
 * customizing news sources
-* news in English, Ukranian and make the necessary models for this
+* news in English, Ukrainian and make the necessary models for this
 * voice digests
 
 

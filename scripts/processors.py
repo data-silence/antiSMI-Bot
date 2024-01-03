@@ -52,7 +52,7 @@ def date_news(parse_date: str = str(datetime.now().date()), part_number: int = 0
     else:
         start_time = start_parse_date + ' ' + '00:00:00'
         finish_time = parse_date + ' ' + '23:59:59'
-    news_df = pd.read_sql(f"SELECT * FROM news WHERE news.date BETWEEN '{start_time}' AND '{finish_time}'", asmi)
+    news_df = pd.read_sql(f"SELECT * FROM news WHERE news.date BETWEEN '{start_time}' AND '{finish_time}' ORDER BY date", asmi)
     list_news = news_df.title.to_list()
     embeddings = [news2emb(news) for news in list_news]
     return news_df, list_news, embeddings
@@ -68,6 +68,7 @@ def show_date(parse_date: str = str(datetime.now().date()), part_number: int = 0
     Можно задать обработку 4-х промежутков в течение суток (задаются ключами словаря parse_time_dict 1-4)
     или обрабатывать сразу все сутки (0, парсится по умолчанию)
     """
+    np.random.seed(42)
     date_df, day_news_list, embeddings = date_news(parse_date, part_number)
     # Если за ночь новостей не появились и новостной датафрейм пустой - отдаём новости прошедшего дня
     if date_df.empty:
@@ -75,7 +76,7 @@ def show_date(parse_date: str = str(datetime.now().date()), part_number: int = 0
         date_df, day_news_list, embeddings = date_news(parse_date)
 
     clast_model = AgglomerativeClustering(n_clusters=None, metric='cosine', linkage='complete',
-                                          distance_threshold=0.3)
+                                          distance_threshold=0.3, random_state=42)
     labels = clast_model.fit_predict(list(embeddings))
     date_df['label'] = labels
     date_df['count'] = date_df.groupby('label')['label'].transform('count')
