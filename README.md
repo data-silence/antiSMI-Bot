@@ -2,6 +2,8 @@
 
 ![](https://github.com/maxlethal/antiSMI-Bot/blob/master/img/bot_presentation.png?raw=true)
 
+![Pandas](https://img.shields.io/badge/Pandas-black?style=flat-square&logo=Pandas) ![Numpy](https://img.shields.io/badge/Numpy-black?style=flat-square&logo=Numpy) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-black?style=flat-square&logo=PostgreSQL) ![Docker](https://img.shields.io/badge/Docker-black?style=flat-square&logo=Docker) ![aiogram](https://img.shields.io/badge/aiogram-black?style=flat-square&logo=aiogram) ![sklearn](https://img.shields.io/badge/sklearn-black?style=flat-square&logo=sklearn)
+
 Bot is a telegram interface to personal and smart news aggregator of russian-language media:
 - removes news garbage (ads, disclaimers, etc.)
 - provides news in neutral-colored and summarized form)
